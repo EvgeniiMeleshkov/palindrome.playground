@@ -9,9 +9,10 @@ var greeting = "Hello, playground"
 
 
 func checkIfPalindrome (input: String) -> Bool {
-    
+
     let modifiedInput = input.replacingOccurrences(of: " ", with: "").lowercased()
     return String(modifiedInput.reversed()) == input.replacingOccurrences(of: " ", with: "").lowercased()
+
 }
 
 checkIfPalindrome(input: "Top spot")            //true
